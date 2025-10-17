@@ -9,14 +9,16 @@ DESCRIPTION:NUMBER_GAME
 int main()
 {
 	int i,number;
+	int count=0;
 	
 	i=3;
 	printf("guess a number from 1-20.\n");
 	
 	
 	do{
-	printf("enter your guess:");
-	scanf("%d", &number);
+		count++;
+		printf("enter your guess:");
+		scanf("%d", &number);
 	
 		if(number==i)
 		{
@@ -30,10 +32,12 @@ int main()
 		{
 		printf("too high!\n");	
 		}
-		number+=;
+		
 	}
 	
-	while(i!=number);
+	while(i!=number);{
+		printf("number of attempts is, %d", count);
+	}
 	
 	return 0;
 }
